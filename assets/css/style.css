@@ -110,6 +110,7 @@ header nav {
 .more img {
   width: 30%;
   height: auto;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=style.css.map */
