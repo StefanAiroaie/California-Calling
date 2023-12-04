@@ -1,7 +1,26 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter/Inter-VariableFont_slnt,wght.ttf");
+}
+@font-face {
+  font-family: "WorkSans";
+  src: url("../fonts/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf");
+}
+:root {
+  --main-hell: white;
+  --main-dark: black;
+  --accent-dark: #AAAAAA;
+  --accent-hell: #EEEEEE;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  font-family: Inter;
 }
 
 /*# sourceMappingURL=style.css.map */
