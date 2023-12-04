@@ -1,5 +1,14 @@
+@use "_fonts.scss" as *;
+@use "_colors" as *;
+@use "_mixin";
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    font-family: Inter;
+    color: $main-hell;
 }
