@@ -6,13 +6,6 @@
   font-family: "WorkSans";
   src: url("../fonts/Work_Sans/WorkSans-Italic-VariableFont_wght.ttf");
 }
-:root {
-  --main-hell: white;
-  --main-dark: black;
-  --accent-dark: #AAAAAA;
-  --accent-hell: #EEEEEE;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -21,6 +14,7 @@
 
 h1 {
   font-family: Inter;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

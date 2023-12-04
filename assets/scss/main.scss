@@ -1,5 +1,6 @@
-@import "fonts.scss";
-@import "colors";
+@use "_fonts.scss" as *;
+@use "_colors" as *;
+@use "_mixin";
 
 * {
     padding: 0;
@@ -9,4 +10,5 @@
 
 h1 {
     font-family: Inter;
+    color: $main-hell;
 }
