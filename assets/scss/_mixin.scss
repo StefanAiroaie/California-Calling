@@ -1,0 +1,6 @@
+@mixin fontstyle($font, $fontSize, $color, $width) {
+    font-family: $font;
+    font-size: $fontSize;
+    color: $color;
+    max-width: $width;
+}
