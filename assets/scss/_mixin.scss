@@ -4,3 +4,13 @@
     color: $color;
     max-width: $width;
 }
+
+@mixin flexRowCenter {
+    display: flex;
+}
+
+@mixin flexColumnCenter {
+    display: flex;
+    flex-direction: column;
+
+}
