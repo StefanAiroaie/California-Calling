@@ -19,7 +19,7 @@ header {
     width: 100vw;
     height: 100vh;
     background-color: $main-dark;
-    @include flexColumnCenter;
+    @include flexColumn;
     justify-content: space-between;
 
 
@@ -31,7 +31,7 @@ header {
             margin-bottom: 5%;
         }
 
-        @include flexColumnCenter;
+        @include flexColumn;
         gap: 5px;
         margin: 0 auto;
         align-items: center;
@@ -55,7 +55,7 @@ header {
     }
 
     nav {
-        @include flexRowCenter;
+        @include flexRow;
         justify-content: space-between;
         padding: 5% 5%;
     }
@@ -75,7 +75,7 @@ header {
     width: 100vw;
     background-color: $main-dark;
     padding: 0 5%;
-    @include flexRowCenter;
+    @include flexRow;
     justify-content: space-between;
     align-items: flex-end;
     gap: 10%;
@@ -97,5 +97,79 @@ header {
         height: auto;
         border: 1px solid red;
     }
+
+}
+
+footer {
+    position: absolute;
+    height: 100%;
+    background-color: $main-dark;
+    padding: 5% 5%;
+
+    h3 {
+        @include fontstyle($fontMain, 3rem, $main-dark, 80%);
+
+    }
+
+    p {
+        @include fontstyle($fontSecond, 0.8rem, $main-hell, 70%);
+    }
+
+    .joinUs {
+        padding: 5% 0;
+        @include flexColumn;
+        justify-content: flex-start;
+        gap: 20px;
+        align-items: flex-start;
+
+
+
+        p:last-of-type {
+            @include fontstyle($fontSecond, 2rem, $main-hell, 40%);
+        }
+    }
+
+    .copyright {
+        @include flexRow;
+        justify-content: space-between;
+        align-items: center;
+
+        .social {
+            @include flexColumn;
+            gap: 15px;
+
+            p {
+                max-width: 100%;
+            }
+
+            .icons {
+                @include flexRow;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5%;
+
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+
+    .parteners {
+        img {
+            height: 50px;
+            padding: 2%;
+        }
+    }
+}
+
+
+
+.banner {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    transform: rotate(45deg);
+    border: 1px solid green;
 
 }

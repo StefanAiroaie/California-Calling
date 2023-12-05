@@ -5,11 +5,11 @@
     max-width: $width;
 }
 
-@mixin flexRowCenter {
+@mixin flexRow {
     display: flex;
 }
 
-@mixin flexColumnCenter {
+@mixin flexColumn {
     display: flex;
     flex-direction: column;
 
