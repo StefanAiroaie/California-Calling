@@ -16,6 +16,28 @@ button {
   background-color: black;
 }
 
+@keyframes movebanner {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -115,7 +137,7 @@ header nav {
 .article01 {
   width: 100vw;
   height: 150vh;
-  background-color: #EEEEEE;
+  background-color: black;
   padding: 5%;
 }
 .article01 .articleText {
@@ -126,21 +148,21 @@ header nav {
 .article01 .articleText h3 {
   font-family: "Inter";
   font-size: 5rem;
-  color: black;
+  color: white;
   max-width: 100%;
   line-height: 4.4rem;
 }
 .article01 .articleText p:first-of-type {
   font-family: "WorkSans";
   font-size: 1.5rem;
-  color: black;
+  color: white;
   max-width: 80%;
   font-weight: 700;
 }
 .article01 .articleText p:last-of-type {
   font-family: "WorkSans";
   font-size: 1rem;
-  color: black;
+  color: white;
   max-width: 100%;
   padding-top: 2%;
 }
@@ -151,13 +173,84 @@ header nav {
 .article01 .articlePhotos img:first-of-type {
   position: absolute;
   top: 10%;
+  right: auto;
+  left: 5%;
+  bottom: auto;
+  width: 55%;
+  height: auto;
+}
+.article01 .articlePhotos img:last-of-type {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  left: auto;
+  bottom: auto;
+  width: 30%;
+  height: auto;
+}
+.article01 .animation {
+  position: relative;
+  height: 30hv;
+  border: 1px solid green;
+}
+.article01 .animation img {
+  position: absolute;
+  top: 25%;
+  right: 15%;
+  left: auto;
+  bottom: auto;
+  width: 30%;
+  height: auto;
+  animation: rotate 5s linear infinite;
+  top: -50%;
+}
+
+.article02 {
+  width: 100vw;
+  height: 150vh;
+  background-color: #EEEEEE;
+  padding: 5%;
+}
+.article02 .articleText {
+  display: flex;
+  justify-content: space-between;
+  gap: 30%;
+}
+.article02 .articleText h3 {
+  font-family: "Inter";
+  font-size: 5rem;
+  color: black;
+  max-width: 100%;
+  line-height: 4.4rem;
+}
+.article02 .articleText p:first-of-type {
+  font-family: "WorkSans";
+  font-size: 1.5rem;
+  color: black;
+  max-width: 80%;
+  font-weight: 700;
+}
+.article02 .articleText p:last-of-type {
+  font-family: "WorkSans";
+  font-size: 1rem;
+  color: black;
+  max-width: 100%;
+  padding-top: 2%;
+}
+.article02 .articlePhotos {
+  height: 100vh;
+  position: relative;
+}
+.article02 .articlePhotos img:first-of-type {
+  position: absolute;
+  top: 10%;
   right: 5%;
   left: auto;
   bottom: auto;
   width: 55%;
   height: auto;
 }
-.article01 .articlePhotos img:last-of-type {
+.article02 .articlePhotos img:last-of-type {
   position: absolute;
   top: 25%;
   right: auto;
@@ -335,17 +428,6 @@ footer .parteners img {
   color: #AAAAAA;
   max-width: 100%;
   animation: movebanner 10s linear infinite;
-}
-@keyframes movebanner {
-  0% {
-    transform: translateX(100%);
-  }
-  50% {
-    transform: translateX(-10%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

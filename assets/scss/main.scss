@@ -2,6 +2,7 @@
 @use "_colors" as *;
 @use "_mixin" as *;
 @use "_buttons" as *;
+@use "_keyframes" as *;
 
 
 html {
@@ -102,6 +103,65 @@ header {
 .article01 {
     width: 100vw;
     height: 150vh;
+    background-color: $main-dark;
+    padding: 5%;
+
+    .articleText {
+        @include flexRow;
+        justify-content: space-between;
+        gap: 30%;
+
+        h3 {
+            @include fontstyle($fontMain, 5rem, $main-hell, 100%);
+            line-height: 4.4rem;
+        }
+
+        p:first-of-type {
+            @include fontstyle($fontSecond, 1.5rem, $main-hell, 80%);
+            font-weight: 700;
+        }
+
+        p:last-of-type {
+            @include fontstyle($fontSecond, 1rem, $main-hell, 100%);
+            padding-top: 2%;
+        }
+
+
+    }
+
+
+    .articlePhotos {
+        height: 100vh;
+        position: relative;
+
+        img:first-of-type {
+            @include imgPositionAbsolute(10%, auto, auto, 5%, 55%);
+
+        }
+
+        img:last-of-type {
+            @include imgPositionAbsolute(25%, 15%, auto, auto, 30%);
+        }
+    }
+
+    .animation {
+        position: relative;
+
+        height: 30hv;
+        border: 1px solid green;
+
+
+        img {
+            @include imgPositionAbsolute(25%, 15%, auto, auto, 30%);
+            animation: rotate 5s linear infinite;
+            top: -50%;
+        }
+    }
+}
+
+.article02 {
+    width: 100vw;
+    height: 150vh;
     background-color: $accent-hell;
     padding: 5%;
 
@@ -141,6 +201,8 @@ header {
     }
 
 }
+
+
 
 .fotos {
     position: relative;
@@ -276,20 +338,4 @@ footer {
         animation: movebanner 10s linear infinite;
     }
 
-
-
-    @keyframes movebanner {
-
-        0% {
-            transform: translateX(100%);
-        }
-
-        50% {
-            transform: translateX(-10%);
-        }
-
-        100% {
-            transform: translateX(100%);
-        }
-    }
 }
