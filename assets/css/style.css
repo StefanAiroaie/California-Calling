@@ -16,6 +16,12 @@ button {
   background-color: black;
 }
 
+button:hover {
+  color: black;
+  border: 1px solid black;
+  background-color: white;
+}
+
 @keyframes movebanner {
   0% {
     transform: translateX(100%);
@@ -136,14 +142,14 @@ header nav {
 
 .article01 {
   width: 100vw;
-  height: 150vh;
+  height: 175vh;
   background-color: black;
-  padding: 5%;
 }
 .article01 .articleText {
   display: flex;
   justify-content: space-between;
   gap: 30%;
+  padding: 5%;
 }
 .article01 .articleText h3 {
   font-family: "Inter";
@@ -167,8 +173,9 @@ header nav {
   padding-top: 2%;
 }
 .article01 .articlePhotos {
-  height: 100vh;
+  height: 90vh;
   position: relative;
+  z-index: 1;
 }
 .article01 .articlePhotos img:first-of-type {
   position: absolute;
@@ -188,21 +195,25 @@ header nav {
   width: 30%;
   height: auto;
 }
-.article01 .animation {
+
+.animation {
   position: relative;
-  height: 30hv;
-  border: 1px solid green;
+  overflow: hidden;
+  background-color: white;
+  top: -10%;
+  height: 60vh;
+  padding: 0 0;
 }
-.article01 .animation img {
+.animation img {
   position: absolute;
-  top: 25%;
-  right: 15%;
+  top: -30%;
+  right: 5%;
   left: auto;
   bottom: auto;
-  width: 30%;
+  width: 35%;
   height: auto;
   animation: rotate 5s linear infinite;
-  top: -50%;
+  overflow: hidden;
 }
 
 .article02 {

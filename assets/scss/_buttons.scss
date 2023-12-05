@@ -9,3 +9,10 @@ button {
     background-color: $main-dark;
 
 }
+
+button:hover {
+    color: $main-dark;
+    border: 1px solid $main-dark;
+    background-color: $main-hell;
+
+}
