@@ -99,6 +99,50 @@ header {
 
 }
 
+article {
+    width: 100vw;
+    height: 150vh;
+    background-color: $accent-hell;
+    padding: 5%;
+    border: 1px solid green;
+
+    .articleText {
+        @include flexRow;
+        justify-content: space-between;
+        gap: 30%;
+
+        h3 {
+            @include fontstyle($fontMain, 5rem, $main-dark, 100%);
+            line-height: 4.4rem;
+        }
+
+        p:first-of-type {
+            @include fontstyle($fontSecond, 1.5rem, $main-dark, 80%);
+            font-weight: 700;
+        }
+
+        p:last-of-type {
+            @include fontstyle($fontSecond, 1rem, $main-dark, 100%);
+            padding-top: 2%;
+        }
+    }
+
+
+    .articlePhotos {
+        height: 140vh;
+        position: relative;
+        border: 1px solid red;
+
+        .bear1 {
+            @include imgPositionAbsolute(auto, 5%, 10%, auto, 60%);
+        }
+
+        .bear2 {
+            @include imgPositionAbsolute(20%, auto, auto, 30%, 10%);
+        }
+    }
+
+}
 
 .fotos {
     position: relative;
@@ -113,26 +157,6 @@ header {
     p {
         @include fontstyle($fontSecond, 1rem, $main-dark, 80%)
     }
-
-    // img {
-    //     width: 20%;
-    //     height: auto;
-    // }
-
-    // .mainText {
-    //     position: absolute;
-    //     top: 30%;
-    //     left: 30%;
-    //     width: 40%;
-    // }
-
-    // .secondText {
-    //     position: absolute;
-    //     top: 80%;
-    //     left: 30%;
-    //     width: 40%;
-
-    // }
 
     .mainText {
         @include imgPositionAbsolute(20%, auto, auto, 30%, 40%);
@@ -151,23 +175,23 @@ header {
     }
 
     .img3 {
-        @include imgPositionAbsolute(40%, 0, 0, 0, 15%);
+        @include imgPositionAbsolute(30%, 0, auto, auto, 15%);
     }
 
     .img4 {
-        @include imgPositionAbsolute(45%, "", "", 25%, 18%);
+        @include imgPositionAbsolute(45%, auto, auto, 25%, 18%);
     }
 
     .img5 {
-        @include imgPositionAbsolute("", 20%, 30%, "", 18%);
+        @include imgPositionAbsolute(50%, 30%, auto, auto, 18%);
     }
 
     .img6 {
-        @include imgPositionAbsolute("", "", 20%, 0, 15%);
+        @include imgPositionAbsolute(auto, auto, 20%, 0, 15%);
     }
 
     .img7 {
-        @include imgPositionAbsolute("", 15%, 0, "", 25%);
+        @include imgPositionAbsolute(auto, 15%, 0, auto, 25%);
     }
 
 }
@@ -182,7 +206,7 @@ header {
 
 footer {
     position: relative;
-    height: 100vh;
+    height: 80vh;
     background-color: $main-dark;
     padding: 5% 5%;
     overflow: hidden;
@@ -243,29 +267,31 @@ footer {
 
 .banner {
     position: absolute;
-    left: 10%;
-    width: 80vw;
+    right: 30%;
+    width: 100vw;
     background-color: white;
-    transform: translate(50%, 0%) rotate(45deg);
+    transform: translate(45%, 60%) rotate(45deg);
     border: 1px solid green;
 
     h3 {
-        @include fontstyle($fontMain, 3rem, $main-dark, 80%);
-        text-align: center;
-        animation: movebanner 5s linear infinite;
+        @include fontstyle($fontMain, 3rem, $accent-dark, 100%);
+        animation: movebanner 10s linear infinite;
     }
 
 
 
     @keyframes movebanner {
 
-        0%,
-        100% {
-            transform: translateX(-100%);
+        0% {
+            transform: translateX(100%);
         }
 
         50% {
-            transform: translateX(0);
+            transform: translateX(-10%);
+        }
+
+        100% {
+            transform: translateX(100%);
         }
     }
 }
