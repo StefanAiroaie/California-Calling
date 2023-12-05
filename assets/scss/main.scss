@@ -182,10 +182,10 @@ header {
 
 footer {
     position: relative;
-    height: 80vh;
-
+    height: 100vh;
     background-color: $main-dark;
     padding: 5% 5%;
+    overflow: hidden;
 
 
 
@@ -242,18 +242,30 @@ footer {
 
 
 .banner {
+    position: absolute;
+    left: 10%;
+    width: 80vw;
+    background-color: white;
+    transform: translate(50%, 0%) rotate(45deg);
+    border: 1px solid green;
 
     h3 {
         @include fontstyle($fontMain, 3rem, $main-dark, 80%);
         text-align: center;
-
+        animation: movebanner 5s linear infinite;
     }
 
-    left: 10%;
-    width: 55vw;
-    position: absolute;
-    background-color: white;
-    transform: rotate(45deg);
-    border: 1px solid green;
 
+
+    @keyframes movebanner {
+
+        0%,
+        100% {
+            transform: translateX(-100%);
+        }
+
+        50% {
+            transform: translateX(0);
+        }
+    }
 }
