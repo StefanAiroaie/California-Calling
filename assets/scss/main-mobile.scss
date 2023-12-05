@@ -9,24 +9,24 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
+// * {
+//     padding: 0;
+//     margin: 0;
+//     box-sizing: border-box;
+// }
 
 // start header with hero and navigation
 header {
     width: 100vw;
-    height: 100vh;
-    background-color: $main-dark;
-    @include flexColumn;
-    justify-content: space-between;
+    height: 70vh;
+    // background-color: $main-dark;
+    // @include flexColumn;
+    // justify-content: space-between;
 
     .hero {
         .line {
             width: 1px;
-            height: 20vh;
+            height: 10vh;
             background-color: $main-hell;
             margin-bottom: 5%;
         }
@@ -38,9 +38,9 @@ header {
 
 
         h1 {
-            @include fontstyle($fontMain, 7rem, $main-hell, 70%);
+            @include fontstyle($fontMain, 3rem, $main-hell, 70%);
             text-align: center;
-            line-height: 6rem;
+            line-height: 3rem;
         }
 
         p {
@@ -70,7 +70,7 @@ header {
     padding: 5%;
 
     h2 {
-        @include fontstyle($fontMain, 6rem, $main-hell, 80%);
+        @include fontstyle($fontMain, 3rem, $main-hell, 80%);
     }
 }
 
@@ -84,22 +84,23 @@ header {
     @include flexRow;
     justify-content: space-between;
     align-items: flex-end;
-    gap: 10%;
+    gap: 5%;
     padding-bottom: 5%;
 
     .facts {
         h2 {
-            @include fontstyle($fontMain, 6rem, $main-hell, 80%);
+            @include fontstyle($fontMain, 2rem, $main-hell, 80%);
             padding-bottom: 2%;
         }
 
-        p {
-            @include fontstyle($fontSecond, 0.8rem, $main-hell, 70%);
-        }
+        // p {
+        //     @include fontstyle($fontSecond, 0.8rem, $main-hell, 70%);
+        //     text-align: center;
+        // }
     }
 
     img {
-        width: 30%;
+        width: 50%;
         height: auto;
     }
 
@@ -111,11 +112,11 @@ header {
 .fotos {
     position: relative;
     width: 100vw;
-    height: 200vh;
+    height: 140vh;
     background-color: $main-hell;
 
     h2 {
-        @include fontstyle($fontMain, 5rem, $main-dark, 100%)
+        @include fontstyle($fontMain, 2rem, $main-dark, 100%)
     }
 
     p {
@@ -123,39 +124,39 @@ header {
     }
 
     .mainText {
-        @include imgPositionAbsolute(20%, auto, auto, 30%, 40%);
+        @include imgPositionAbsolute(10%, auto, auto, 10%, 80%);
     }
 
     .secondText {
-        @include imgPositionAbsolute(70%, auto, auto, 35%, 25%);
+        @include imgPositionAbsolute(45%, auto, auto, 15%, 85%);
     }
 
     .img1 {
-        @include imgPositionAbsolute(-5%, 10%, auto, auto, 22%);
+        @include imgPositionAbsolute(-2%, 10%, auto, auto, 40%);
     }
 
     .img2 {
-        @include imgPositionAbsolute(8%, auto, auto, 8%, 20%);
+        @include imgPositionAbsolute(2%, auto, auto, 8%, 30%);
     }
 
     .img3 {
-        @include imgPositionAbsolute(30%, 0, auto, auto, 15%);
+        @include imgPositionAbsolute(30%, 0, auto, auto, 35%);
     }
 
     .img4 {
-        @include imgPositionAbsolute(45%, auto, auto, 25%, 18%);
+        @include imgPositionAbsolute(33%, auto, auto, 0, 40%);
     }
 
     .img5 {
-        @include imgPositionAbsolute(50%, 30%, auto, auto, 18%);
+        @include imgPositionAbsolute(35%, 30%, auto, auto, 35%);
     }
 
     .img6 {
-        @include imgPositionAbsolute(auto, auto, 20%, 0, 15%);
+        @include imgPositionAbsolute(auto, auto, 19%, 0, 70%);
     }
 
     .img7 {
-        @include imgPositionAbsolute(auto, 15%, -3%, auto, 25%);
+        @include imgPositionAbsolute(auto, 0, -1%, auto, 70%);
     }
 
 }
@@ -165,17 +166,17 @@ header {
 // start first article
 .article01 {
     width: 100vw;
-    height: 175vh;
+    height: 100vh;
     background-color: $main-dark;
 
     .articleText {
-        @include flexRow;
+        @include flexColumn;
         justify-content: space-between;
-        gap: 30%;
+        gap: 0%;
         padding: 5%;
 
         h3 {
-            @include fontstyle($fontMain, 5rem, $main-hell, 100%);
+            @include fontstyle($fontMain, 3rem, $main-hell, 100%);
             line-height: 4.4rem;
         }
 
@@ -233,7 +234,7 @@ header {
 
 .article02 {
     width: 100vw;
-    height: 150vh;
+    height: 100vh;
     background-color: $accent-hell;
     padding: 5%;
 
@@ -259,7 +260,7 @@ header {
     }
 
     .articlePhotos {
-        height: 100vh;
+        height: 50vh;
         position: relative;
 
         img:first-of-type {
@@ -296,7 +297,7 @@ footer {
         align-items: flex-start;
 
         p:last-of-type {
-            @include fontstyle($fontSecond, 2rem, $main-hell, 40%);
+            @include fontstyle($fontSecond, 1rem, $main-hell, 70%);
         }
     }
 
@@ -335,13 +336,13 @@ footer {
 
     .banner {
         position: absolute;
-        right: 30%;
+        right: 25%;
         width: 100vw;
         background-color: $accent-hell;
         transform: translate(45%, 60%) rotate(45deg);
 
         h3 {
-            @include fontstyle($fontMain, 3rem, $accent-dark, 100%);
+            @include fontstyle($fontMain, 1rem, $accent-dark, 100%);
             animation: movebanner 10s linear infinite;
         }
 

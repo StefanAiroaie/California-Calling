@@ -1,3 +1,6 @@
+@use "_colors" as *;
+
+// mixin for text formating
 @mixin fontstyle($font, $fontSize, $color, $width) {
     font-family: $font;
     font-size: $fontSize;
@@ -5,16 +8,19 @@
     max-width: $width;
 }
 
+// mixin for display flex
 @mixin flexRow {
     display: flex;
 }
 
+// mixin for display flex as column
 @mixin flexColumn {
     display: flex;
     flex-direction: column;
 
 }
 
+// mixin for text/images in position absolute
 @mixin imgPositionAbsolute($top, $right, $bottom, $left, $width) {
     position: absolute;
     top: $top;
@@ -23,4 +29,15 @@
     bottom: $bottom;
     width: $width;
     height: auto;
+}
+
+// mixin for border text used in span (dark and hell)
+@mixin textBorderDark {
+    text-shadow: 0 0 2px $main-dark, 0 0 2px $main-dark, 0 0 2px $main-dark, 0 0 2px $main-dark, ;
+    color: $main-hell;
+}
+
+@mixin textBorderHell {
+    text-shadow: 0 0 2px $main-hell, 0 0 2px $main-hell, 0 0 2px $main-hell, 0 0 2px $main-hell, ;
+    color: $main-dark;
 }

@@ -48,19 +48,9 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 header {
   width: 100vw;
-  height: 100vh;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  height: 70vh;
 }
 header .hero {
   display: flex;
@@ -71,17 +61,17 @@ header .hero {
 }
 header .hero .line {
   width: 1px;
-  height: 20vh;
+  height: 10vh;
   background-color: white;
   margin-bottom: 5%;
 }
 header .hero h1 {
   font-family: "Inter";
-  font-size: 7rem;
+  font-size: 3rem;
   color: white;
   max-width: 70%;
   text-align: center;
-  line-height: 6rem;
+  line-height: 3rem;
 }
 header .hero p {
   font-family: "WorkSans";
@@ -107,7 +97,7 @@ header nav {
 }
 .intro h2 {
   font-family: "Inter";
-  font-size: 6rem;
+  font-size: 3rem;
   color: white;
   max-width: 80%;
 }
@@ -119,36 +109,30 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  gap: 10%;
+  gap: 5%;
   padding-bottom: 5%;
 }
 .more .facts h2 {
   font-family: "Inter";
-  font-size: 6rem;
+  font-size: 2rem;
   color: white;
   max-width: 80%;
   padding-bottom: 2%;
 }
-.more .facts p {
-  font-family: "WorkSans";
-  font-size: 0.8rem;
-  color: white;
-  max-width: 70%;
-}
 .more img {
-  width: 30%;
+  width: 50%;
   height: auto;
 }
 
 .fotos {
   position: relative;
   width: 100vw;
-  height: 200vh;
+  height: 140vh;
   background-color: white;
 }
 .fotos h2 {
   font-family: "Inter";
-  font-size: 5rem;
+  font-size: 2rem;
   color: black;
   max-width: 100%;
 }
@@ -160,38 +144,38 @@ header nav {
 }
 .fotos .mainText {
   position: absolute;
-  top: 20%;
+  top: 10%;
   right: auto;
-  left: 30%;
+  left: 10%;
   bottom: auto;
-  width: 40%;
+  width: 80%;
   height: auto;
 }
 .fotos .secondText {
   position: absolute;
-  top: 70%;
+  top: 45%;
   right: auto;
-  left: 35%;
+  left: 15%;
   bottom: auto;
-  width: 25%;
+  width: 85%;
   height: auto;
 }
 .fotos .img1 {
   position: absolute;
-  top: -5%;
+  top: -2%;
   right: 10%;
   left: auto;
   bottom: auto;
-  width: 22%;
+  width: 40%;
   height: auto;
 }
 .fotos .img2 {
   position: absolute;
-  top: 8%;
+  top: 2%;
   right: auto;
   left: 8%;
   bottom: auto;
-  width: 20%;
+  width: 30%;
   height: auto;
 }
 .fotos .img3 {
@@ -200,25 +184,25 @@ header nav {
   right: 0;
   left: auto;
   bottom: auto;
-  width: 15%;
+  width: 35%;
   height: auto;
 }
 .fotos .img4 {
   position: absolute;
-  top: 45%;
+  top: 33%;
   right: auto;
-  left: 25%;
+  left: 0;
   bottom: auto;
-  width: 18%;
+  width: 40%;
   height: auto;
 }
 .fotos .img5 {
   position: absolute;
-  top: 50%;
+  top: 35%;
   right: 30%;
   left: auto;
   bottom: auto;
-  width: 18%;
+  width: 35%;
   height: auto;
 }
 .fotos .img6 {
@@ -226,34 +210,35 @@ header nav {
   top: auto;
   right: auto;
   left: 0;
-  bottom: 20%;
-  width: 15%;
+  bottom: 19%;
+  width: 70%;
   height: auto;
 }
 .fotos .img7 {
   position: absolute;
   top: auto;
-  right: 15%;
+  right: 0;
   left: auto;
-  bottom: -3%;
-  width: 25%;
+  bottom: -1%;
+  width: 70%;
   height: auto;
 }
 
 .article01 {
   width: 100vw;
-  height: 175vh;
+  height: 100vh;
   background-color: black;
 }
 .article01 .articleText {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 30%;
+  gap: 0%;
   padding: 5%;
 }
 .article01 .articleText h3 {
   font-family: "Inter";
-  font-size: 5rem;
+  font-size: 3rem;
   color: white;
   max-width: 100%;
   line-height: 4.4rem;
@@ -317,7 +302,7 @@ header nav {
 
 .article02 {
   width: 100vw;
-  height: 150vh;
+  height: 100vh;
   background-color: #EEEEEE;
   padding: 5%;
 }
@@ -348,7 +333,7 @@ header nav {
   padding-top: 2%;
 }
 .article02 .articlePhotos {
-  height: 100vh;
+  height: 50vh;
   position: relative;
 }
 .article02 .articlePhotos img:first-of-type {
@@ -393,9 +378,9 @@ footer .joinUs {
 }
 footer .joinUs p:last-of-type {
   font-family: "WorkSans";
-  font-size: 2rem;
+  font-size: 1rem;
   color: white;
-  max-width: 40%;
+  max-width: 70%;
 }
 footer .copyright {
   display: flex;
@@ -425,14 +410,14 @@ footer .parteners img {
 }
 footer .banner {
   position: absolute;
-  right: 30%;
+  right: 25%;
   width: 100vw;
   background-color: #EEEEEE;
   transform: translate(45%, 60%) rotate(45deg);
 }
 footer .banner h3 {
   font-family: "Inter";
-  font-size: 3rem;
+  font-size: 1rem;
   color: #AAAAAA;
   max-width: 100%;
   animation: movebanner 10s linear infinite;
@@ -442,4 +427,4 @@ footer .banner span {
   color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-mobile.css.map */

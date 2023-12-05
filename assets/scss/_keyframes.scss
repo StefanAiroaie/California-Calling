@@ -1,3 +1,4 @@
+// animation text move
 @keyframes movebanner {
 
     0% {
@@ -13,7 +14,7 @@
     }
 }
 
-
+// animation rotate
 @keyframes rotate {
 
     0% {
@@ -21,10 +22,10 @@
     }
 
     50% {
-        transform: rotate(360deg);
+        transform: rotate(180deg);
     }
 
     100% {
-        transform: rotate(0);
+        transform: rotate(360deg);
     }
 }
