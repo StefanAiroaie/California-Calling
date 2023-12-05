@@ -113,4 +113,71 @@ header nav {
   border: 1px solid red;
 }
 
+footer {
+  position: absolute;
+  height: 100%;
+  background-color: black;
+  padding: 5% 5%;
+}
+footer h3 {
+  font-family: "Inter";
+  font-size: 3rem;
+  color: black;
+  max-width: 80%;
+}
+footer p {
+  font-family: "WorkSans";
+  font-size: 0.8rem;
+  color: white;
+  max-width: 70%;
+}
+footer .joinUs {
+  padding: 5% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 20px;
+  align-items: flex-start;
+}
+footer .joinUs p:last-of-type {
+  font-family: "WorkSans";
+  font-size: 2rem;
+  color: white;
+  max-width: 40%;
+}
+footer .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .copyright .social {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+footer .copyright .social p {
+  max-width: 100%;
+}
+footer .copyright .social .icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5%;
+}
+footer .copyright .social .icons img {
+  width: 20px;
+}
+footer .parteners img {
+  height: 50px;
+  padding: 2%;
+}
+
+.banner {
+  position: relative;
+  background-color: white;
+  width: 100%;
+  transform: rotate(45deg);
+  border: 1px solid green;
+}
+
 /*# sourceMappingURL=style.css.map */
