@@ -99,12 +99,11 @@ header {
 
 }
 
-article {
+.article01 {
     width: 100vw;
     height: 150vh;
     background-color: $accent-hell;
     padding: 5%;
-    border: 1px solid green;
 
     .articleText {
         @include flexRow;
@@ -129,16 +128,15 @@ article {
 
 
     .articlePhotos {
-        height: 140vh;
+        height: 100vh;
         position: relative;
-        border: 1px solid red;
 
-        .bear1 {
-            @include imgPositionAbsolute(auto, 5%, 10%, auto, 60%);
+        img:first-of-type {
+            @include imgPositionAbsolute(10%, 5%, auto, auto, 55%);
         }
 
-        .bear2 {
-            @include imgPositionAbsolute(20%, auto, auto, 30%, 10%);
+        img:last-of-type {
+            @include imgPositionAbsolute(25%, auto, auto, 15%, 30%);
         }
     }
 
