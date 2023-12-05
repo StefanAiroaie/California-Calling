@@ -308,12 +308,13 @@ header nav {
 }
 .article02 .articleText {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  gap: 30%;
+  gap: 1%;
 }
 .article02 .articleText h3 {
   font-family: "Inter";
-  font-size: 5rem;
+  font-size: 3rem;
   color: black;
   max-width: 100%;
   line-height: 4.4rem;

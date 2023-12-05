@@ -239,12 +239,12 @@ header {
     padding: 5%;
 
     .articleText {
-        @include flexRow;
+        @include flexColumn;
         justify-content: space-between;
-        gap: 30%;
+        gap: 1%;
 
         h3 {
-            @include fontstyle($fontMain, 5rem, $main-dark, 100%);
+            @include fontstyle($fontMain, 3rem, $main-dark, 100%);
             line-height: 4.4rem;
         }
 
