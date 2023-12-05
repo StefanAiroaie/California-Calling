@@ -112,60 +112,58 @@ header nav {
   height: auto;
 }
 
-article {
+.article01 {
   width: 100vw;
   height: 150vh;
   background-color: #EEEEEE;
   padding: 5%;
-  border: 1px solid green;
 }
-article .articleText {
+.article01 .articleText {
   display: flex;
   justify-content: space-between;
   gap: 30%;
 }
-article .articleText h3 {
+.article01 .articleText h3 {
   font-family: "Inter";
   font-size: 5rem;
   color: black;
   max-width: 100%;
   line-height: 4.4rem;
 }
-article .articleText p:first-of-type {
+.article01 .articleText p:first-of-type {
   font-family: "WorkSans";
   font-size: 1.5rem;
   color: black;
   max-width: 80%;
   font-weight: 700;
 }
-article .articleText p:last-of-type {
+.article01 .articleText p:last-of-type {
   font-family: "WorkSans";
   font-size: 1rem;
   color: black;
   max-width: 100%;
   padding-top: 2%;
 }
-article .articlePhotos {
-  height: 140vh;
+.article01 .articlePhotos {
+  height: 100vh;
   position: relative;
-  border: 1px solid red;
 }
-article .articlePhotos .bear1 {
+.article01 .articlePhotos img:first-of-type {
   position: absolute;
-  top: auto;
+  top: 10%;
   right: 5%;
   left: auto;
-  bottom: 10%;
-  width: 60%;
+  bottom: auto;
+  width: 55%;
   height: auto;
 }
-article .articlePhotos .bear2 {
+.article01 .articlePhotos img:last-of-type {
   position: absolute;
-  top: 20%;
+  top: 25%;
   right: auto;
-  left: 30%;
+  left: 15%;
   bottom: auto;
-  width: 10%;
+  width: 30%;
   height: auto;
 }
 
