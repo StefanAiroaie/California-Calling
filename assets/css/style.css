@@ -214,9 +214,10 @@ header nav {
 
 footer {
   position: relative;
-  height: 80vh;
+  height: 100vh;
   background-color: black;
   padding: 5% 5%;
+  overflow: hidden;
 }
 footer p {
   font-family: "WorkSans";
@@ -266,11 +267,11 @@ footer .parteners img {
 }
 
 .banner {
-  left: 10%;
-  width: 55vw;
   position: absolute;
+  left: 10%;
+  width: 80vw;
   background-color: white;
-  transform: rotate(45deg);
+  transform: translate(50%, 0%) rotate(45deg);
   border: 1px solid green;
 }
 .banner h3 {
@@ -279,6 +280,15 @@ footer .parteners img {
   color: black;
   max-width: 80%;
   text-align: center;
+  animation: movebanner 5s linear infinite;
+}
+@keyframes movebanner {
+  0%, 100% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
