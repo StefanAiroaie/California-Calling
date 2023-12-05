@@ -14,3 +14,13 @@
     flex-direction: column;
 
 }
+
+@mixin imgPositionAbsolute($top, $right, $bottom, $left, $width) {
+    position: absolute;
+    top: $top;
+    right: $right;
+    left: $left;
+    bottom: $bottom;
+    width: $width;
+    height: auto;
+}
