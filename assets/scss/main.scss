@@ -151,7 +151,7 @@ header {
     }
 
     .img3 {
-        @include imgPositionAbsolute(40%, 0, "", "", 15%);
+        @include imgPositionAbsolute(40%, 0, 0, 0, 15%);
     }
 
     .img4 {
@@ -172,10 +172,6 @@ header {
 
 }
 
-
-
-
-.article {}
 
 
 
